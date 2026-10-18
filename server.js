@@ -16,10 +16,6 @@ app.get("/", (req, res) => {
   res.send("App responding");
 });
 
-// app.get("/test-auth", authMiddleware, (req, res) => {
-//   res.json({ message: "Authentication successful", user: req.user });
-// });
-
 app.listen(process.env.PORT, () => {
   console.log(`App responding from port ${process.env.PORT}`);
 });
